@@ -4,9 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>American International Mailing Inc.</title>
-    <img src="https://www.aimmailing.com/Uploads/Images/SiteFiles/logo.png" alt="AIM logo">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    <a href="#Home">
+        <img src="https://www.aimmailing.com/Uploads/Images/SiteFiles/logo.png" alt="AIM logo">
+    </a>
 
-    <div id="navbar">
+    <!-- <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+    </script> -->
+
+    <div id="navbar" class="topnav">
         <!-- <a href="#default" id="logo">Company logo</a><br> -->
         <div id="navbar-right">
             <a id="Home" href="#Home">Home</a><br>
@@ -17,7 +35,7 @@
         </div>
     </div>
 
-    <!-- <link rel="stylesheet" href="styles.css"> -->
+    
     
 </head>
 <body>
@@ -150,7 +168,7 @@
                     <label class="container">Bags</label><br>
                        
                 <label for="assist">How can we assist you?</label><br>
-                <textarea id="assist" name="assist" placeholder="How can we help?" style="height:170px"></textarea><br>
+                <textarea id="assist" name="assist" placeholder="Let us know..." style="height:170px"></textarea><br>
                 <input type="submit" value="Submit">
             </form>
         </div>
