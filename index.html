@@ -7,10 +7,10 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     
     <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
    
     <a href="#Home">
-        <img src="https://www.aimmailing.com/Uploads/Images/SiteFiles/logo.png" alt="AIM logo" class="logo">
+        <img class="logo" src="https://www.aimmailing.com/Uploads/Images/SiteFiles/logo.png" alt="AIM logo" style="width:100%; height:auto; max-width:200px;">
     </a>
 
     <!-- <script>
@@ -27,15 +27,17 @@
     <div id="navbar" class="topnav">
         <!-- <a href="#default" id="logo">Company logo</a><br> -->
         <div id="navbar-right">
-            <nav>
-                                <a id="Home" href="#Home" class="active">Home</a><br>
-                <a id="Who We Are" href="#Who_We_Are">Who We Are</a><br>
-                <a id="How To Use" href="#How_To_Use">How To Use</a><br>
-                <a id="Mailing Services" href="#Mailing_Services">Mailing Services</a><br>
-                <a id="Contact form" href="#Contact_form">Contact</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
+            <nav class="stroke">
+                <ul>
+                  <li><a id="Home" href="#Home" class="active">Home</a></li>
+                  <li><a id="Who We Are" href="#Who_We_Are">Who We Are</a></li>
+                  <li><a id="How To Use" href="#How_To_Use">How To Use</a></li>
+                  <li><a id="Mailing Services" href="#Mailing_Services">Mailing Services</a></li>
+                  <li><a id="Contact form" href="#Contact_form">Contact</a></li>
+                  <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a> -->
+                </ul>
             </nav>
         </div>
     </div>
@@ -63,23 +65,23 @@
     <div>
         <h1 id="How_To_Use">How To Use</h1>
         <div>
-            <h2>1.</h2>
-            <p>Aliquam imperdiet bibendum orci quis aliquet. Morbi quis dictum felis. Morbi sit amet vestibulum lorem, vitae sodales erat. Pellentesque viverra placerat ultrices. Nam imperdiet ultrices porttitor. Curabitur non urna vitae ligula lacinia sollicitudin nec sit amet urna. Phasellus feugiat lectus et tempor rutrum.</p>
+            <!-- <h2>1.</h2> -->
+            <p class="pg">1. Aliquam imperdiet bibendum orci quis aliquet. Morbi quis dictum felis. Morbi sit amet vestibulum lorem, vitae sodales erat. Pellentesque viverra placerat ultrices. Nam imperdiet ultrices porttitor. Curabitur non urna vitae ligula lacinia sollicitudin nec sit amet urna. Phasellus feugiat lectus et tempor rutrum.</p>
         </div>
 
         <div>
-            <h2>2.</h2>
-            <p>Donec interdum orci purus, vel tincidunt mauris commodo nec. Nam et posuere magna. Maecenas et convallis turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at felis eget dui bibendum vestibulum. Donec non elementum diam. Aliquam erat volutpat. 
+            <!-- <h2>2.</h2> -->
+            <p class="pg">2. Donec interdum orci purus, vel tincidunt mauris commodo nec. Nam et posuere magna. Maecenas et convallis turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at felis eget dui bibendum vestibulum. Donec non elementum diam. Aliquam erat volutpat. 
         </div>
 
         <div>
-            <h2>3.</h2>
-            <p>Cras vel faucibus metus. Praesent sagittis lectus et vulputate iaculis. Nulla augue urna, semper ut semper sit amet, sollicitudin a mi. Morbi elit urna, viverra in sagittis at, convallis id lacus. Aenean a blandit turpis.</p>
+            <!-- <h2>3.</h2> -->
+            <p class="pg">3. Cras vel faucibus metus. Praesent sagittis lectus et vulputate iaculis. Nulla augue urna, semper ut semper sit amet, sollicitudin a mi. Morbi elit urna, viverra in sagittis at, convallis id lacus. Aenean a blandit turpis.</p>
         </div>
 
         <div>
-            <h2>4.</h2>
-            <p>Aliquam vel scelerisque elit, vel bibendum magna. Quisque elementum auctor mauris, sed posuere magna consectetur non. Nulla porta at tellus sed interdum. Etiam euismod, nulla nec elementum imperdiet, arcu neque mattis lorem, a sollicitudin nunc nisi in magna. </p>
+            <!-- <h2>4.</h2> -->
+            <p class="pg">4. Aliquam vel scelerisque elit, vel bibendum magna. Quisque elementum auctor mauris, sed posuere magna consectetur non. Nulla porta at tellus sed interdum. Etiam euismod, nulla nec elementum imperdiet, arcu neque mattis lorem, a sollicitudin nunc nisi in magna. </p>
         </div>
     </div>
     
@@ -98,16 +100,16 @@
         <div class="column">
             <form>
                 
-                <label for="coname">Company's Name:</label><br>
+                <label for="coname">Company's Name:</label>
                     <input type="text" id="coname" name="comanysname"><br>              
-                <label for="flname">Name:</label><br>
+                <label for="flname">Name:</label>
                     <input type="text" id="flname" name="name"><br>
-                <label for="number">Phone Number:</label><br>
+                <label for="number">Phone Number:</label>
                     <input type="text" id="number" name="phonenumber"><br>
-                <label for="email">Email:</label><br>
+                <label for="email">Email:</label>
                     <input type="text" id="email" name="email"><br>
                 
-                <label for="state">State</label><br>
+                <label for="state">State:</label>
                     <select id="state" name="state">
                         <option value="AL">Alabama</option>
                         <option value="AK">Alaska</option>
@@ -161,7 +163,7 @@
                         <option value="WI">Wisconsin</option>
                         <option value="WY">Wyoming</option>
                     </select><br>
-                <label for="supplies">Order Supplies:</label><br>
+                <label for="supplies">Order Supplies:</label>
                     <input type="checkbox">
                     <span class="checkmark"></span>
                     <label class="container">AIM Labels</label><br>
@@ -172,7 +174,7 @@
                     <span class="checkmark"></span>
                     <label class="container">Bags</label><br>
                        
-                <label for="assist">How can we assist you?</label><br>
+                <label for="assist">How can we assist you?</label>
                 <textarea id="assist" name="assist" placeholder="Let us know..." style="height:170px"></textarea><br>
                 <input type="submit" value="Submit">
             </form>
