@@ -86,6 +86,7 @@ nav ul li a {
   font-weight: 800;
   text-transform: uppercase;
   margin: 0 5px;
+  font-size: 17px;
 }
 nav ul li a,
 nav ul li a:after,
@@ -98,5 +99,26 @@ nav ul li a:hover {
 .pg {
   padding: 10px;
   position: relative;
+  
+}
+.pgflex {
   display: flex;
+  flex-direction: row;
+}
+
+
+
+@media only screen and (max-width:600px) {
+  .pgflex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .pg {
+    flex: 48%;
+    height: 100px;
+    margin-bottom: 2%;
+    padding: 5%;
+  }
+
 }
