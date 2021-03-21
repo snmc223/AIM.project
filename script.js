@@ -1,14 +1,8 @@
-function myFunction(x) {
-    x.classList.toggle("change");
+function myFunction() {
+  var x = document.getElementById("menu");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
   }
-
-//   <!-- <script>
-//         function myFunction() {
-//           var x = document.getElementById("myTopnav");
-//           if (x.className === "topnav") {
-//             x.className += " responsive";
-//           } else {
-//             x.className = "topnav";
-//           }
-//         }
-//     </script> -->
+}
