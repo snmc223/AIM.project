@@ -44,13 +44,6 @@ h3 {
 p, .container {
   margin: 0 25px;
 }
-.container form {
-  text-align: center;
-  padding: 35px;
-}
-.container form label {
-  text-align: inherit;
-}
 head a img {
   position: relative;
 }
@@ -108,7 +101,7 @@ nav ul li a:hover {
   align-items: center;
 }
 
-#hamburger-icon {
+#hamburgerIcon {
   font-size: 20px;
   position: absolute;
   top: 5px;
@@ -131,6 +124,33 @@ nav ul li a:hover {
   margin-right: auto;
   width: 32%;
 }
+.container form label {
+  text-align: inherit;
+}
+.container form {
+  text-align: left;
+  padding: 10px;
+}
+/* .container form input {
+  align-items: center;
+} */
+form {
+  max-width: 400px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: #f4f7f8;
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px 2px #818181;
+  font-size: 12px;
+}
+fieldset {
+  border-style: none;
+  padding-top: 10px;
+}
+#assist {
+  height: 150px;
+  width: 190px;
+}
 
 
 @media only screen and (max-width: 480px) {
@@ -147,7 +167,7 @@ nav ul li a:hover {
   #logo {
     width: 30%;
   }
-  #hamburger-icon {
+  #hamburgerIcon {
     display: block;
     position: absolute;
     right: 5px;
@@ -184,13 +204,66 @@ nav ul li a:hover {
   .pg {
     flex: 48%;
     /* height: 100px; */
-    margin-bottom: 2%;
-    padding: 5%;
+    margin-bottom: 1%;
+    padding: 1%;
   }
   .logo-img {
     padding: 0;
   }
-
+  body {
+    font-size: 60%;
+    padding: 0;
+    margin: 0;
+  }
+  h1 {
+    text-align: center;
+    padding: 20px 0;
+    text-decoration: none;
+    color: #aaa;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 5px;
+    font-size: 100%;
+    
+  }
+  h3 {
+    text-align: center;
+    margin: 0 25px;
+    letter-spacing: .5px;
+    color: #fff;
+    font-size: 100%;
+    background-color: #495c6e;
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    font-weight: 543;
+  }
+  #assist {
+    height: 90px;
+    width: 110px;
+  }
+  p{
+    padding: 0px;
+  }
+  form {
+    max-width: 400px;
+    margin: 5px auto;
+    padding: 0;
+    background: #f4f7f8;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px #818181;
+    font-size: 11px;
+  }
+  #how {
+    position: relative;
+    bottom: 90px;
+  }
+  .submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+  }
 }
 
 @media only screen
@@ -212,8 +285,9 @@ and (-webkit-min-device-pixel-ratio: 1) {
   }
   .pgflex {
     display: flex;
-    flex-direction: column;
+    flex-direction: initial;
     justify-content: space-between;
     flex-wrap: wrap;
+    flex-grow: 1;
 
 }
