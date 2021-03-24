@@ -28,14 +28,18 @@
                 <li><a id="How To Use" href="#How_To_Use">How To Use</a></li>
                 <li><a id="Mailing Services" href="#Mailing_Services">Mailing Services</a></li>
                 <li><a id="Contact form" href="#Contact_form">Contact</a></li>
-                <a href="#" id="pull"></a>
             </ul>
         </nav>
-        <div id="hamburgerIcon" class="btnIcon" onclick="myFunction()" href="script.js">
+        <div id="hamburgerIcon" class="btnIcon" onclick="myFunction()">
             <button type="button" class="btn">
+                <!-- <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+                <span class="icon-bar"></span> -->
+                <div class="container">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
             </button>
         </div>
 
@@ -132,7 +136,7 @@
             <p>For more information, please contact AIM using the form below.</p>
         </div>
         <div class="column">
-            <form id="myForm" action="script.js">
+            <form id="myForm">
                 <fieldset>
                     <label for="coname">Company's Name:</label>
                     <input type="text" id="coname" name="comanysname" placeholder="Company Name"><br>
@@ -217,13 +221,13 @@
                     <textarea id="assist" name="assist" placeholder="Let us know..."></textarea><br>
                     
                     <div class="submit">
-                        <button type="submit" onclick="alert('Your Information has been received!')" value="Submit form">Submit</button> 
+                        <button type="submit" onclick="validEmail()" value="Submit form">Submit</button> 
                     </div>
                 </fieldset>
             </form>
         </div>
     </div>
-
+    <script src="script.js"></script>
 </body>
 
 </html>

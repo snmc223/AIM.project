@@ -1,13 +1,27 @@
 function myFunction() {
-  var x = document.getElementById("hamburgerIcon");
-  if (x.className === "btnIcon") {
+  var x = document.getElementById("menu");
+  if (x.className === "topnav") {
     x.className += " responsive";
   } else {
-    x.className = "btnIcon";
+    x.className = "topnav";
   }
 }
 
+function validEmail() {
+  var x=document.getElementById("email").value;
+  if (x == "" ) {
+    alert("Not valid email");
+  } else {
+    alert("Information has been received");
+  }
+}
 
-// showPrompt("Enter something<br>...smart :)", function(value) {
-//   alert(value);
-// });
+// function ValidateEmail() {
+//   // var x=document.getElementById("myForm").value;
+//   if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(myForm.emailAddr.value)) {
+//     return(true);
+//   } else {
+//     alert("You have entered an invalid email address");
+//     return(false);
+//   }
+// }

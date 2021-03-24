@@ -164,6 +164,26 @@ fieldset {
     margin-bottom: 0;
     display: none;
   }
+  nav ul li a {
+    float: right;
+    display: block;
+    color: white;
+    text-align: right;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 10px;
+    position: sticky;
+    flex-direction: column;
+  }
+  nav ul li a:hover {
+    color: #34495e;
+  }
+  #menu.responsive{
+    display: inline-block;
+    background: #aaa;
+    border-radius: 1.5px;
+    margin: 5px;
+  }
   #logo {
     width: 30%;
   }
@@ -183,17 +203,28 @@ fieldset {
     margin-bottom: 8px;
     background-color: transparent;
     background-image: none;
-    border: 1px solid;
+    border: 0 solid;
     border-color: white;
     border-radius: 3.2px;
     cursor: pointer;
   }
-  .btn .icon-bar {
+  .btnIcon.responsive {
+    position: relative;
+    border: 0;
+  }
+  .bar1, .bar2, .bar3 {
     background-color: #aaa;
     display: block;
     width: 22px;
-    height: 1px;
+    height: 2px;
     border-radius: 1px;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .container {
+    display: inline-block;
+    cursor: pointer;
   }
   
   .pgflex {
