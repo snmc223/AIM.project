@@ -35,7 +35,7 @@ function validEmail() {
 var myVar;
 
 function mySpinner() {
-  myVar = setTimeout(showPage, 3000);
+  myVar = setTimeout(showPage, 800);
 }
 
 function showPage() {

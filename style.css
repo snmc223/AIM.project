@@ -12,23 +12,7 @@ h1 {
   text-transform: uppercase;
   margin: 0 5px;
   font-size: 23px;
-  /* text-align: center;
-  padding: 27px 0;
-  font-weight: 800;
-  margin: 0;
-  letter-spacing: -1px;
-  color: #34495e;
-  font-size: 30px; */
 }
-/* h2 {
-  text-align: left;
-  padding: 10px 0;
-  font-weight: 800;
-  margin: 0;
-  letter-spacing: -1px;
-  color: #34495e;
-  font-size: 30px;
-} */
 h3 {
   text-align: center;
   margin: 0 25px;
@@ -54,11 +38,8 @@ head a img {
   max-width: 200px;
 }
 
-/* .pg {
-  display: flex;
-  flex-wrap: row;
-} */
 
+/* Navigation style*/
 nav {
   width: 100%;
   margin: 0 auto;
@@ -95,12 +76,14 @@ nav ul li a:before {
 nav ul li a:hover {
   color: #34495e;
 }
+
+
+/* Menu and hamburger icon style*/
 #menu {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 #hamburgerIcon {
   font-size: 20px;
   position: absolute;
@@ -109,6 +92,8 @@ nav ul li a:hover {
   display: none;
 }
 
+
+/* body content styled*/
 .pg {
   padding: 10px;
   position: relative;
@@ -124,6 +109,9 @@ nav ul li a:hover {
   margin-right: auto;
   width: 32%;
 }
+
+
+/* Contact form style*/
 .container form label {
   text-align: inherit;
 }
@@ -131,9 +119,6 @@ nav ul li a:hover {
   text-align: left;
   padding: 10px;
 }
-/* .container form input {
-  align-items: center;
-} */
 form {
   max-width: 400px;
   margin: 10px auto;
@@ -154,6 +139,13 @@ fieldset {
 
 
 @media only screen and (max-width: 480px) {
+  /* logo style*/
+  .logo-img {
+    padding: 0;
+  }
+  
+
+  /* Navigation style*/
   nav {
     flex-direction: column;
     padding: 10px 0;
@@ -178,6 +170,9 @@ fieldset {
   nav ul li a:hover {
     color: #34495e;
   }
+
+
+  /* Responsive hamburger icon for menu dropdown*/
   #menu.responsive{
     display: inline-block;
     background: #aaa;
@@ -192,7 +187,6 @@ fieldset {
     position: absolute;
     right: 5px;
     top: 5px;
-    
   }
   .btn {
     position: relative;
@@ -222,11 +216,8 @@ fieldset {
     transition: 0.4s;
   }
 
-  .container {
-    display: inline-block;
-    cursor: pointer;
-  }
-  
+
+  /* body content style*/
   .pgflex {
     display: flex;
     flex-wrap: wrap;
@@ -234,12 +225,8 @@ fieldset {
   }
   .pg {
     flex: 48%;
-    /* height: 100px; */
     margin-bottom: 1%;
     padding: 1%;
-  }
-  .logo-img {
-    padding: 0;
   }
   body {
     font-size: 60%;
@@ -255,7 +242,6 @@ fieldset {
     text-transform: uppercase;
     margin: 0 5px;
     font-size: 100%;
-    
   }
   h3 {
     text-align: center;
@@ -269,12 +255,19 @@ fieldset {
     text-decoration: none;
     font-weight: 543;
   }
+  p{
+    padding: 0px;
+  }
+
+
+  /* Contact form style*/
+  .container {
+    display: inline-block;
+    cursor: pointer;
+  }
   #assist {
     height: 90px;
     width: 110px;
-  }
-  p{
-    padding: 0px;
   }
   form {
     max-width: 400px;
@@ -295,6 +288,8 @@ fieldset {
     align-items: center;
     height: 50px;
   }
+  
+  
 }
 
 @media only screen
@@ -302,19 +297,13 @@ and (min-device-width: 481px)
 and (max-device-width: 994px) 
 and (-webkit-min-device-pixel-ratio: 1) {
 
-  /* nav {
-    flex-direction: column;
-    padding: 10px 0;
-  }
-  #menu {
-    flex-direction: column;
-    padding: 0;
-    margin-bottom: 0;
-  } */
-
+/* logo size */
   #logo {
     width: 30%;
   }
+
+
+  /* menu style */
   nav {
     flex-direction: column;
     padding: 10px 0;
@@ -339,6 +328,9 @@ and (-webkit-min-device-pixel-ratio: 1) {
   nav ul li a:hover {
     color: #34495e;
   }
+
+
+  /* hamburger icon style with responsive/hidden menu and button */
   #menu.responsive{
     display: inline-block;
     background: #aaa;
@@ -359,7 +351,6 @@ and (-webkit-min-device-pixel-ratio: 1) {
     position: absolute;
     right: 5px;
     top: 5px;
-    
   }
   .btn {
     position: relative;
@@ -389,16 +380,20 @@ and (-webkit-min-device-pixel-ratio: 1) {
     transition: 0.4s;
   }
 
-  .container {
-    display: inline-block;
-    cursor: pointer;
-  }
-
+  
+/* How to use section flex grid */
   .pgflex {
     display: flex;
     flex-direction: initial;
     justify-content: space-between;
     flex-wrap: wrap;
     flex-grow: 1;
+  }
+
+
+/* Form container style */
+  .container {
+    display: inline-block;
+    cursor: pointer;
   }
 }
