@@ -9,17 +9,17 @@ function myFunction() {
 
 
 
-function checkForm(form) {
-  var inputs = form.getElementsByTagName('input');
-  for (var i = 0; i < inputs.length; i++) {
-    if(inputs[i].hasAttribut("required")){
-      if(inputs[i].value == ""){
+function checkForm() {
+  let form = document.getElementById('myForm');
+  for (var i = 0; i < form.length; i++) {
+    if(form[i].hasAttribute("required")){
+      if(form[i].value == ""){
         alert("Please fill out all required fields.")
         return false;
       }
     }
   }
-  alert("Information has been received.")
+  alert("Thank you for submitting your information.")
   return true;
 }
 
@@ -32,7 +32,6 @@ function validEmail() {
   }
 }
 
-
 var myVar;
 
 function mySpinner() {
@@ -43,6 +42,11 @@ function showPage() {
   document.getElementById("loader").style.display = "none";
   document.getElementById("myDiv").style.display = "block";
 }
+
+
+
+
+
 
 // function ValidateEmail() {
 //   // var x=document.getElementById("myForm").value;
