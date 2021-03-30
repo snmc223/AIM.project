@@ -32,6 +32,18 @@ function validEmail() {
   }
 }
 
+
+var myVar;
+
+function mySpinner() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+
 // function ValidateEmail() {
 //   // var x=document.getElementById("myForm").value;
 //   if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(myForm.emailAddr.value)) {
